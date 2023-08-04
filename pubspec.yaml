@@ -30,6 +30,18 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  google_maps_flutter: ^2.4.0
+  location: ^5.0.2+1
+  speech_to_text: ^5.2.0
+  flutter_tts: ^3.2.2
+  chat_gpt_sdk: ^2.2.4
+  http: ^0.13.3
+  video_player: ^2.7.0
+  assets_audio_player:
+    git:
+      url: https://github.com/florent37/Flutter-AssetsAudioPlayer.git
+      ref: master
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -52,6 +64,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/audio/
+    - assets/images/navi.jpg
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

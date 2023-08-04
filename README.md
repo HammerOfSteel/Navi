@@ -31,3 +31,7 @@ Navi is a smart assistant app, inspired by Navi the fairy from "The Legend of Ze
 # Contributing
 - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 Please make sure to update tests as appropriate.
+
+
+# Assets (audio and images):
+- Please find the appropriate assets on the web for yourself and use with the project if you want it to be functional.
