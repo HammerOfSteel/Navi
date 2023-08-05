@@ -2,6 +2,12 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <uses-feature android:glEsVersion="0x00030000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="true"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" />
+    <uses-feature android:name="android.hardware.sensor.gyroscope" />
 
     <application
         android:label="navi_app"
@@ -33,7 +39,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyC9D1w5j4OtVAIYN6EoxhfgvqpyiNWH1OA"/>
+            android:value="XX"/>
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />

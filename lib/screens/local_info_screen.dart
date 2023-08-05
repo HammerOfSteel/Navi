@@ -36,16 +36,29 @@ class _LocalInfoScreenState extends State<LocalInfoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Local Information'),
+        backgroundColor: Color(0xfff8efd3),
+        title: Image.asset('assets/images/hylian_info.png', fit: BoxFit.cover),
       ),
       body: _currentLocation == LatLng(0, 0)
         ? Center(child: CircularProgressIndicator())
-        : GoogleMap(
-            onMapCreated: _onMapCreated,
-            initialCameraPosition: CameraPosition(
-              target: _currentLocation,
-              zoom: 14.0,
-            ),
+        : Stack(
+            children: <Widget>[
+              GoogleMap(
+                onMapCreated: _onMapCreated,
+                initialCameraPosition: CameraPosition(
+                  target: _currentLocation,
+                  zoom: 14.0,
+                ),
+              ),
+              IgnorePointer(
+                child: Positioned.fill(
+                  child: Image.asset(
+                    'assets/images/clouds.png',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+            ],
           ),
       floatingActionButton: FloatingActionButton(
         onPressed: _getCurrentLocation,

@@ -19,7 +19,8 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
+  #sdk: '>=3.0.6 <4.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -38,6 +39,8 @@ dependencies:
   chat_gpt_sdk: ^2.2.4
   http: ^0.13.3
   video_player: ^2.7.0
+  arcore_flutter_plugin: ^0.1.0
+  cached_network_image: ^3.0.0  # Use cached_network_image instead of flutter_gifimage
   assets_audio_player:
     git:
       url: https://github.com/florent37/Flutter-AssetsAudioPlayer.git
@@ -67,6 +70,9 @@ flutter:
   assets:
     - assets/audio/
     - assets/images/navi.jpg
+    - assets/images/hylian_info.png
+    - assets/images/clouds.png
+    - assets/images/texture.jpg
 
 
   # The following line ensures that the Material Icons font is
